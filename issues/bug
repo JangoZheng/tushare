@@ -1,0 +1,5 @@
+df = ts.pro_bar(ts_code='000001.SZ,000002.SZ', start_date='20200313', factors=['tor'])
+调用时返回的数据会重复2次。
+df = ts.pro_bar(ts_code='000001.SZ,000002.SZ,000003.SZ', start_date='20200313', factors=['tor'])
+调用时返回的数据会重复3次。
+也就是说，股票代码数量决定重复次数。
